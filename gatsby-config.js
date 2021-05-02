@@ -24,13 +24,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ['Roboto']
-        }
+        fonts: [
+          `Roboto` // you can also specify font weights and styles
+        ],
+        display: 'swap'
       }
-      },
+    },
 
     {
       resolve: `gatsby-plugin-manifest`,

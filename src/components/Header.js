@@ -18,6 +18,6 @@ export default Header
 
 
 const Nav=styled.nav`
-background:transparent;
+background-color:${props => props.theme.color.background.light};
 height:80px;
 `

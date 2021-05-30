@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Link,useStaticQuery} from "gatsby"
 const Hero = () => {
 const data= useStaticQuery(graphql`
 query HeroBanner{
 file(relativePath: {eq: "box.png"}) {
   childImageSharp {
-    fluid {
-    ...GatsbyImageSharpFluid
+    gatsbyImageData(layout:CONSTRAINED )
     }
-  }
+  
 }
 }
 
@@ -26,15 +25,14 @@ console.log(data);
         <Container>
           <Flex>
             <HeroTextGroup>
-              <Subtitle>Personal Finance</Subtitle>
+              <Subtitle>Lancerlot</Subtitle>
               <h1>
-                All your money,
+                Grow as a freelancer or small agency
                 <br />
-                one account
+               
               </h1>
               <h2>
-                We're building next generation personal finance tools. Sign up to
-                get early access.
+                We created all-in-one dashboard with all practical information to help you go "to the moon"
               </h2>
               <HeroForm onSubmit={handleSubmit}>
                 <HeroInput placeholder="Your email" />
@@ -45,10 +43,9 @@ console.log(data);
                 <FormSubtitleLink to="/"></FormSubtitleLink>
               </FormSubtitle>
             </HeroTextGroup>
-            <Img fluid={data.file.childImageSharp.fluid} /> 
-            <ImageWrapper>   
-              
-            </ImageWrapper>
+              <ImageWrapper>
+               <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
+               </ImageWrapper>
           </Flex>
         </Container>
       </HeroWrapper>
@@ -92,9 +89,9 @@ export const Container = styled.div`
 
 const HeroWrapper = styled.header`
  background-color:${props => props.theme.color.background.light}; //#f8f8f8;
-  padding: 160px 0 80px 0;
+  padding: 160px 0 40px 0;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
   }
 `
@@ -223,6 +220,8 @@ const HeroButton = styled.button`
 const ImageWrapper = styled.div`
   justify-self: end;
   align-self: center;
+  margin-bottom:-40px;
+
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: center;
   }

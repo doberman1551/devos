@@ -2,15 +2,15 @@
 
 const theme = {
     font: {
-      primary: `'Roboto Regular 400'`,
-      secondary: `'HK Grotesk Medium'`,
-      light: `'HK Grotesk Light'`,
+      primary: `'Roboto-Regular'`,
+      secondary: `'Roboto-Medium'`,
+      light: `'OpenSans-Light'`,
       normal: `'HK Grotesk Normal'`,
       medium: `'HK Grotesk Medium'`,
       semibold: `'HK Grotesk Semibold'`,
-      bold: `'HK Grotesk Bold'`,
+      bold: `'HKGrotesk-Bold'`,
       extrabold: `'HK Grotesk Extra Bold'`,
-    },
+    }, 
     font_size: {
       xxxsmall: "font-size: 12px;",
       xxsmall: "font-size: 14px;",
@@ -28,7 +28,7 @@ const theme = {
       accent: "#203647",//#cca86e
       background: {
         white: "#ffffff",
-        light: " #F6F9FE",//#f8f8f8
+        light: " #F6F8FB",//#f8f8f8
       },
       white: {
         regular: "#ffffff",

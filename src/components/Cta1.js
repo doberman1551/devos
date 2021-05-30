@@ -7,9 +7,9 @@ const Cta1 = () => {
     return (
         <StyledSection>
         <GetStartedContainer>
-          <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-          <TryItButton>Get early access</TryItButton>
-          <Subtitle>No credit card required.</Subtitle>
+          <GetStartedTitle>Be the first to get the Beta Demo Version for free!</GetStartedTitle>
+          <TryItButton>Try it!</TryItButton>
+         
         </GetStartedContainer>
       </StyledSection>
     

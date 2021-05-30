@@ -31,7 +31,7 @@ const GetStartedContainer = styled(Container)`
   padding: 80px 0 40px;
 `
 
-const GetStartedTitle = styled.h3`
+const GetStartedTitle = styled.h4`
   margin: 0 auto 32px;
   text-align: center;
 `

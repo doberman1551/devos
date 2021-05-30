@@ -10,20 +10,20 @@ const Features = () => (
       <SectionTitle>Smart money management</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>Sales</FeatureTitle>
           <FeatureText>
             Receive budget and spending alerts based on your favorite triggers.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Positioning</FeatureTitle>
           <FeatureText>
             Your data is always safe with us as we use the latest security
             protocols.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Promo Codes</FeatureTitle>
           <FeatureText>
             Create smart automated workflows and triggers for your money.
           </FeatureText>

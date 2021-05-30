@@ -20,7 +20,7 @@ const IndexPage = () => (
     <Hero/>
     <Description/>
     <Features/>
-    <Price/>
+    {/*<Price/>*/}
     <Cta1/>
   </Layout>
 )

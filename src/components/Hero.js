@@ -6,9 +6,9 @@ import { Link,useStaticQuery} from "gatsby"
 const Hero = () => {
 const data= useStaticQuery(graphql`
 query HeroBanner{
-file(relativePath: {eq: "box.png"}) {
+file(relativePath: {eq: "knight.png"}) {
   childImageSharp {
-    gatsbyImageData(layout:CONSTRAINED )
+    gatsbyImageData(layout:CONSTRAINED quality: 100 )
     }
   
 }
@@ -89,7 +89,7 @@ export const Container = styled.div`
 
 const HeroWrapper = styled.header`
  background-color:${props => props.theme.color.background.light}; //#f8f8f8;
-  padding: 160px 0 40px 0;
+  padding: 120px 0 20px 0;
   position: relative;
   //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -220,7 +220,7 @@ const HeroButton = styled.button`
 const ImageWrapper = styled.div`
   justify-self: end;
   align-self: center;
-  margin-bottom:-40px;
+  margin-bottom:-20px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: center;

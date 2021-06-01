@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
-import bgimg from '../images/bgBlob.svg';
+
 import { Link,useStaticQuery} from "gatsby"
 
 

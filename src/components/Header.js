@@ -13,7 +13,7 @@ const data= useStaticQuery(graphql`
 query Logo{
 file(relativePath: {eq: "logo.png"}) {
   childImageSharp {
-    gatsbyImageData(layout:CONSTRAINED )
+    gatsbyImageData(layout:CONSTRAINED quality:100 )
     }
   
 }
@@ -42,7 +42,7 @@ position:relative;
 `
 
 const LogoContainer=styled.div`
-height:80px;
+padding: 1.5rem 0;
 z-index:100;
 max-width:150px;
 padding:0 15px;

@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link,useStaticQuery} from "gatsby"
+import {useState} from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 const Hero = () => {
+
+
 const data= useStaticQuery(graphql`
 query HeroBanner{
 file(relativePath: {eq: "knight.png"}) {
@@ -16,10 +20,7 @@ file(relativePath: {eq: "knight.png"}) {
 
 `)
 console.log(data);
-    const handleSubmit = event => {
-        event.preventDefault()
-      }
-
+    
     return (
         <HeroWrapper id="top">
         <Container>
@@ -34,9 +35,9 @@ console.log(data);
               <h2>
                 We created all-in-one dashboard with all practical information to help you go "to the moon"
               </h2>
-              <HeroForm onSubmit={handleSubmit}>
-                <HeroInput placeholder="Your email" />
-                <HeroButton>Early access</HeroButton>
+              <HeroForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
+                <HeroInput placeholder="Your email"  type="email" name="email"/>
+                <HeroButton  type="submit">Early access</HeroButton>
               </HeroForm>
               <FormSubtitle>
                 

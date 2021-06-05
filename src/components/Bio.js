@@ -6,7 +6,7 @@ import {useStaticQuery} from "gatsby"
 
 
 export const Bio = () => {
-   const data= useStaticQuery(graphql`
+   const data1= useStaticQuery(graphql`
     query Bio{
     file(relativePath: {eq: "dobromir.jpg"}) {
       childImageSharp {
@@ -19,9 +19,7 @@ export const Bio = () => {
     `)
     return (
         <BioWrapper>
-              <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} imgStyle={{
-                  borderRadius: '50%',
-                }}/>
+              <GatsbyImage image={data1.file.childImageSharp.gatsbyImageData}/>
             
         </BioWrapper>
              

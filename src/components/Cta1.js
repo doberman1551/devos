@@ -7,7 +7,8 @@ const Cta1 = () => {
     return (
         <StyledSection>
         <GetStartedContainer>
-          <GetStartedTitle>Be the first to get the Beta Demo Version for free!</GetStartedTitle>
+          <GetStartedTitle>Be the first to get the Beta</GetStartedTitle>
+          <Subtitle>Subscribe and get access to "Places to find clients" section  for free</Subtitle>
           <TryItButton>Try it!</TryItButton>
          
         </GetStartedContainer>
@@ -32,7 +33,7 @@ const GetStartedContainer = styled(Container)`
 `
 
 const GetStartedTitle = styled.h4`
-  margin: 0 auto 32px;
+  margin: 0 auto 16px;
   text-align: center;
 `
 
@@ -46,6 +47,7 @@ const TryItButton = styled.button`
   margin-left: 8px;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 16px;
   white-space: nowrap;
   background: ${props => props.theme.color.secondary};
   border-radius: 4px;
@@ -67,7 +69,7 @@ const TryItButton = styled.button`
 
 const Subtitle = styled.span`
   ${props => props.theme.font_size.xxsmall}
-  padding-top: 16px;
-  font-size: 14px;
+  padding-top: 8px;
+  font-size: 18px;
   color: ${props => props.theme.color.primary};
 `

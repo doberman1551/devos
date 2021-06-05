@@ -8,7 +8,7 @@ import Hero from "../components/Hero"
 import Description from "../components/Description"
 import Cta1 from "../components/Cta1"
 import Features from "../components/Features"
-import { Bio } from "../components/bio"
+import { BioInfo } from "../components/BioInfo"
 
 
 
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <Description/>
     <Features/>
     <Cta1/>
-    <Bio/>
+    <BioInfo/>
   </Layout>
 )
 

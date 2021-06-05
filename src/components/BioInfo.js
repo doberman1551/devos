@@ -4,12 +4,9 @@ import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn"
 import {HiOutlineMail}  from "@react-icons/all-files/hi/HiOutlineMail"
 import { Section } from "./Global"
 
-import { graphql } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image"
-import {useStaticQuery} from "gatsby"
 
 
-export const Bio = () => {
+export const BioInfo = () => {
    
     return (
       <StyledSection>

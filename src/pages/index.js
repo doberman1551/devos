@@ -8,8 +8,8 @@ import Hero from "../components/Hero"
 import Description from "../components/Description"
 import Cta1 from "../components/Cta1"
 import Features from "../components/Features"
-import Price from "../components/Price"
-import { Bio } from "../components/bio"
+
+
 
 
 
@@ -21,9 +21,7 @@ const IndexPage = () => (
     <Hero/>
     <Description/>
     <Features/>
-    {/*<Price/>*/}
     <Cta1/>
-   {/*  <Bio/>*/}
   </Layout>
 )
 

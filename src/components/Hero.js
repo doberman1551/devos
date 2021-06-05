@@ -210,7 +210,8 @@ const HeroButton = styled.button`
   border-image: initial;
   outline: 0px;
   &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+    box-shadow: 12px 12px 2px 1px rgba(191,175,178,1);
+    transform: scale(1.05);
   }
   @media (max-width: ${props => props.theme.screen.md}) {
   }

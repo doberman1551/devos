@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.2.1",
     "gatsby-image": "^3.3.0",

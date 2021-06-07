@@ -49,7 +49,7 @@ const Description = () => {
             <TextArea>
             <b>Building a technology service business is hard... </b> <br></br> Lancerlot is your loyal companion to save time.<br></br> It is an all-in-one <b>Notion</b> dashboard to help you with sales, marketing, projects and  finance. 
             <br></br>
-            It's a comprehensive & actionable resource packed with frameworks, templates, resources, and tools.
+            It's a comprehensive & actionable resource packed with frameworks, templates, resources and tools.
             <br></br>
            Suitable for:
             <ul>

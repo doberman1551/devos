@@ -11,7 +11,7 @@ export const BioInfo = () => {
     return (
       <StyledSection>
         <BioWrapper>
-              Created by Dobromir Kotsev <br></br>
+              Created by a fellow tech services provider Dobromir Kotsev <br></br>
               <SocialLinks>
               <span>
               <a href="https://www.linkedin.com/in/dobromirkotsev/">

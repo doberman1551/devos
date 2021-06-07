@@ -8,11 +8,11 @@ const Cta1 = () => {
         <StyledSection>
         <GetStartedContainer>
           <GetStartedTitle>Be the first to get the Beta</GetStartedTitle>
-          <Subtitle>Subscribe and get access to "Places to find clients" section  for free</Subtitle>
+          <Subtitle>Subscribe and get access to "Places to find clients" section  for free when is live</Subtitle>
         
           <CtaForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
-                <CtaInput placeholder="Name"  type="name" name="name"/>
-                <CtaInput placeholder="Your email"  type="email" name="email"/>
+                <CtaInput placeholder="Name"  type="name" name="name" required />
+                <CtaInput placeholder="Your email"  type="email" name="email" required/>
                 <TryItButton>Try it!</TryItButton>
               </CtaForm>
         

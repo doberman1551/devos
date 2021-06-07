@@ -33,10 +33,10 @@ console.log(data);
                
               </h1>
               <h2>
-                We created all-in-one dashboard with all practical information to help you go "to the moon"
+                We created all-in-one dashboard with practical information and tips to scale your practice.
               </h2>
               <HeroForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
-                <HeroInput placeholder="Your email"  type="email" name="email"/>
+                <HeroInput placeholder="Your email"  type="email" name="email" required/>
                 <HeroButton  type="submit">Early access</HeroButton>
               </HeroForm>
               <FormSubtitle>

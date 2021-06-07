@@ -7,41 +7,39 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <SectionTitle>Get Actionable Information</SectionTitle>
       <FeaturesGrid>
-        <FeatureItem>
-          <FeatureTitle>Sales</FeatureTitle>
-          <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
-          </FeatureText>
-        </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Positioning</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Places and advice on how to position yourself.
           </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Marketing and Leadgen</FeatureTitle>
+          <FeatureText>
+          Ideas,places and growth-hacking examples for lead generation.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Sales</FeatureTitle>
+          <FeatureText>
+            Proposals, Contracts and how to utilize partnerships.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Operations and growth</FeatureTitle>
+          <FeatureText>
+          Delivery, hiring, organisation, PM tips and finance.       </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Promo Codes</FeatureTitle>
-          <FeatureText>
-            Create smart automated workflows and triggers for your money.
-          </FeatureText>
+          <FeatureText> Discounts for some of your favourite ecosystem tools.</FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Community</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
-          <FeatureText>
-            High interest and rewards for hitting your goals.
+          Place to share leads and get together on projects.(Coming in v2)
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

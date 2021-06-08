@@ -38,16 +38,19 @@ export default Header
 const Nav=styled.nav`
 background-color:${props => props.theme.color.background.light};
 height:80px;
-position:relative;
+//position:relative;
+;
 `
 
 const LogoContainer=styled.div`
 padding: 1.5rem 0;
+
+
 z-index:100;
 max-width:150px;
 padding:0 15px;
 overflow:hidden;
-margin-left:20px;
+margin-left:60px;
 @media only screen and (max-width: 650px) {
   -webkit-box-flex: 1;
     -ms-flex: 1;

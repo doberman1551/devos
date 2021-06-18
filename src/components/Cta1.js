@@ -8,7 +8,7 @@ const Cta1 = () => {
         <StyledSection>
         <GetStartedContainer>
           <GetStartedTitle>Be the first to get the Beta</GetStartedTitle>
-          <Subtitle>Subscribe and get access to "Places to find clients" section  for free soon and an early-bird discount on the official launch</Subtitle>
+          <Subtitle>Subscribe and get access to "Places to find clients" section  for free soon and an early-bird discount on the official launch!</Subtitle>
         
           <CtaForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
                 <CtaInput placeholder="Name"  type="name" name="name" required />

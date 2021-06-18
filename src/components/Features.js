@@ -28,7 +28,7 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Operations and growth</FeatureTitle>
+          <FeatureTitle>Growth</FeatureTitle>
           <FeatureText>
           Delivery, hiring, organisation, PM tips and finance.       </FeatureText>
         </FeatureItem>

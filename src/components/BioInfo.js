@@ -3,13 +3,17 @@ import styled from "styled-components"
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn"
 import {HiOutlineMail}  from "@react-icons/all-files/hi/HiOutlineMail"
 import { Section } from "./Global"
-
+import { graphql } from 'gatsby'
+import { GatsbyImage } from "gatsby-plugin-image"
+import { useStaticQuery} from "gatsby"
 
 
 export const BioInfo = () => {
-   
+ 
+
     return (
       <StyledSection>
+        
         <BioWrapper>
               Created by a fellow tech services provider Dobromir Kotsev <br></br>
               <SocialLinks>
@@ -18,13 +22,13 @@ export const BioInfo = () => {
               <FaLinkedinIn/>
               </a>
               &nbsp;</span>
-               <a href="mailto:myemail@site.com?Subject=Some%20subject">
+               <a href="mailto:dobromir.kotsev@gmail.com?Subject=Some%20subject">
                   <HiOutlineMail/>
                 </a>
               </SocialLinks>
-
+            
               </BioWrapper>
-  
+            
         </StyledSection>
 
               )   
@@ -47,3 +51,5 @@ const SocialLinks=styled.div`
   margin-top:8px;
 
 `
+
+

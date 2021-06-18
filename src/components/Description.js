@@ -47,7 +47,7 @@ const Description = () => {
             <p>
             <h2> What is it?</h2>
             <TextArea>
-            <b>Building a technology service business is hard... </b> <br></br> Lancerlot is your loyal companion to save time.<br></br> It is an all-in-one <b>Notion</b> dashboard to help you with sales, marketing, projects and  finance. 
+            <b>Building a technology service business is hard... </b> <br></br> Lancerlot is your loyal companion to save time finding and delivering new projects.<br></br> It is an all-in-one <b>Notion</b> dashboard to help you with sales, marketing and operations. 
             <br></br>
             It's a comprehensive & actionable resource packed with frameworks, templates, resources and tools.
             <br></br>

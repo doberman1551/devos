@@ -33,7 +33,7 @@ console.log(data);
                
               </h1>
               <h2>
-                We created all-in-one dashboard with practical information and tips to scale your practice.
+                We created all-in-one dashboard with resources on sales, marketing and operations to help you grow.
               </h2>
               <HeroForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
                 <HeroInput placeholder="Your email"  type="email" name="email" required/>

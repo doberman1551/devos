@@ -14,7 +14,7 @@ const ThanksPage = () => (
     <h1>Thank you for subscribing.</h1>
     <Subtitle>Lancerlot is still work in progess and set to launch soon. However access your free <b>"Platforms to find good projects"</b> below </Subtitle>
         
-    <Button as="a" href="https://www.notion.so/Where-to-find-leads-and-opportunities-aa86ca113ef142f9aaf02c94c850fc0b">Get it</Button>
+    <Button as="a" href="https://www.notion.so/Where-to-find-leads-and-opportunities-aa86ca113ef142f9aaf02c94c850fc0b">Get Access</Button>
     <br>
     </br>
     <Link to="/">Go back to the homepage</Link>

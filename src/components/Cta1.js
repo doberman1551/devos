@@ -7,8 +7,10 @@ const Cta1 = () => {
     return (
         <StyledSection>
         <GetStartedContainer>
-          <GetStartedTitle>Be the first to get the Beta</GetStartedTitle>
-          <Subtitle>Subscribe and get access to "Places to find clients" section  for free soon and an early-bird discount on the official launch!</Subtitle>
+          <GetStartedTitle>Join the Community and Beta!</GetStartedTitle>
+          <Subtitle>Subscribe and get access to <b>"Platforms to find good projects"</b> section and an early-bird discount on the official launch!
+          <br></br>  Fan of small-form actionable information? Also receive curated tips in your mailbox weekly. </Subtitle>
+       
         
           <CtaForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
                 <CtaInput placeholder="Name"  type="name" name="name" required />
@@ -80,6 +82,7 @@ const Subtitle = styled.span`
   padding-top: 8px;
   margin-bottom:16px;
   font-size: 18px;
+  line-height: 1.5;
   color: ${props => props.theme.color.primary};
 `
 const CtaForm = styled.form`

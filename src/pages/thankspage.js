@@ -11,15 +11,18 @@ const ThanksPage = () => (
     <SEO title="Thank you page" />
     
     <DownloadContainer>
-    <h1>Thank you for subscribing.</h1>
-    <Subtitle>Lancerlot is still work in progess and set to launch soon. However access your free <b>"Platforms to find good projects"</b> below </Subtitle>
+    <h1>Thanks for Joining.</h1>
+    <Subtitle>Lancerlot is still work in progess and set to launch soon. However access your free <b>"Platforms to find good projects"</b> by subscribing below  &#128071;&#128071; <br/></Subtitle>
         
-    <Button as="a" href="https://www.notion.so/Where-to-find-leads-and-opportunities-aa86ca113ef142f9aaf02c94c850fc0b">Get Access</Button>
+  {/*  <Button as="a" href="https://www.notion.so/Where-to-find-leads-and-opportunities-aa86ca113ef142f9aaf02c94c850fc0b">Get Access</Button>
     <br>
     </br>
+*/} 
+    
+    <iframe src="https://lancerlot.substack.com/embed" width="480" height="320" frameborder="0" scrolling="no"></iframe>
     <Link to="/">Go back to the homepage</Link>
     </DownloadContainer>
-  
+
     
   </Layout>
 )
@@ -42,7 +45,7 @@ const DownloadContainer = styled(Container)`
   padding: 40px 0 40px;
  
 `
-const Button = styled.button`
+{/*const Button = styled.button`
  font-weight: 500;
   font-size: 14px;
   color: white;
@@ -73,7 +76,7 @@ const Button = styled.button`
     margin-left: 0;
   }
 `
-
+*/} 
 
 const Subtitle = styled.span`
   ${props => props.theme.font_size.xsmall}

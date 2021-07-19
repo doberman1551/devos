@@ -12,14 +12,13 @@ const Cta1 = () => {
           <br></br>  Fan of small-form actionable information? Also receive curated tips in your mailbox weekly. </Subtitle>
        
         
-          <CtaForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
-                <CtaInput placeholder="Name"  type="name" name="name" required />
-                <CtaInput placeholder="Your email"  type="email" name="email" required/>
-                <TryItButton>Try it!</TryItButton>
-              </CtaForm>
-        
          
+          
+          <Button as="a" href="/thankspage">Get It!</Button>
+           
+             
          
+  
         </GetStartedContainer>
       </StyledSection>
     
@@ -46,17 +45,31 @@ const GetStartedTitle = styled.h4`
   text-align: center;
 `
 
-const TryItButton = styled.button`
+
+
+
+const Subtitle = styled.span`
+  ${props => props.theme.font_size.xxsmall}
+  padding-top: 8px;
+  margin-bottom:16px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: ${props => props.theme.color.primary};
+`
+
+const Button = styled.button`
   font-weight: 500;
   font-size: 14px;
   color: white;
   letter-spacing: 1px;
   height: 40px;
-  display: block;
+  display: inline-flex;
+  align-items: center; 
   margin-left: 8px;
+  text-decoration:none;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 0px;
+  margin-top: 8px;
   white-space: nowrap;
   background: ${props => props.theme.color.secondary};
   border-radius: 4px;
@@ -74,53 +87,26 @@ const TryItButton = styled.button`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-left: 0;
-  }
-`
+  }`
 
-const Subtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
-  padding-top: 8px;
-  margin-bottom:16px;
-  font-size: 18px;
-  line-height: 1.5;
-  color: ${props => props.theme.color.primary};
-`
-const CtaForm = styled.form`
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  padding-bottom: 16px;
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-  }
-`
-
-const CtaInput = styled.input`
-  font-weight: 500;
-  
-  font-size: 16px;
-  color: ${props => props.theme.color.primary};
-  line-height: 42px;
-  width: 100%;
-  text-align: left;
-  height: 40px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: ${props => props.theme.color.secondary};
-  border-image: initial;
-  border-radius: 4px;
-  padding: 8px 16px;
-  margin:8px 8px;
-  outline: 0px;
-  &:focus {
-    box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
+  // Styled link not button
+{/*const Button = styled.button`
+  display: inline-block;
+  border-radius: 5px;
+  padding: 16.5px 36px;
+  vertical-align: middle;
+  margin:5px,auto;
+  width: 120px;
+  background: ${props => props.theme.color.secondary};
+  color: white;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(191,175,178,1);
+    transform: scale(1.05);
   }
   @media (max-width: ${props => props.theme.screen.md}) {
-    margin-bottom: 8px;
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
-    display: block;
-    width: 100%;
+    margin-left: 0;
   }
-`
+`*/}

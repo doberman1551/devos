@@ -35,14 +35,7 @@ console.log(data);
               <h2>
                 We created all-in-one dashboard with resources on sales, marketing and operations to help you grow.
               </h2>
-              <HeroForm  action="https://getform.io/f/599b06c3-2bb8-46ba-b323-ef6f3a8e5cf7" method="post" >
-                <HeroInput placeholder="Your email"  type="email" name="email" required/>
-                <HeroButton  type="submit">Early access</HeroButton>
-              </HeroForm>
-              <FormSubtitle>
-                
-                <FormSubtitleLink to="/"></FormSubtitleLink>
-              </FormSubtitle>
+             <Button as="a" href="/thankspage">Get Early Access</Button>
             </HeroTextGroup>
               <ImageWrapper>
                <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
@@ -132,7 +125,7 @@ const HeroTextGroup = styled.div`
 
 const Flex = styled.div`
   display: grid;
-  justify-content: space-between;
+  justify-content: space-space-around;
   align-content: center;
   grid-template-columns: 1fr 1fr;
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -141,74 +134,18 @@ const Flex = styled.div`
   }
 `
 
-const HeroForm = styled.form`
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 16px;
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-  }
-`
 
-const FormSubtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
-`
-
-const FormSubtitleLink = styled(Link)`
-  color: ${props => props.theme.color.secondary};
-  padding-bottom: 1px;
-  margin-left: 8px;
-  text-decoration: none;
-  border-bottom: 1px solid ${props => props.theme.color.secondary};
-`
-
-const HeroInput = styled.input`
-  font-weight: 500;
-  font-size: 16px;
-  color: ${props => props.theme.color.primary};
-  line-height: 42px;
-  width: 100%;
-  text-align: left;
-  height: 60px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: ${props => props.theme.color.secondary};
-  border-image: initial;
-  border-radius: 4px;
-  padding: 8px 16px;
-  outline: 0px;
-  &:focus {
-    box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
-  }
-  @media (max-width: ${props => props.theme.screen.md}) {
-    margin-bottom: 8px;
-  }
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    display: block;
-    width: 100%;
-  }
-`
-
-const HeroButton = styled.button`
-  font-weight: 500;
-  font-size: 14px;
-  color: white;
-  letter-spacing: 1px;
-  height: 60px;
-  display: block;
-  margin-left: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
+const Button = styled.button`
+  display: inline-block;
+  border-radius: 5px;
+  padding: 16.5px 33px;
+  vertical-align: middle;
+  margin:0,auto;
+  width: 12rem;
   background: ${props => props.theme.color.secondary};
-  border-radius: 4px;
-  padding: 0px 40px;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  outline: 0px;
+  color: white;
+  text-decoration: none;
   &:hover {
     box-shadow: 12px 12px 2px 1px rgba(191,175,178,1);
     transform: scale(1.05);

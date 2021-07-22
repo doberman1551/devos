@@ -5,42 +5,42 @@ export const Price = () => {
     return (
       <StyledSection>
         
-   <PriceContainer>
-   <h2>Pricing</h2>
-    <PanelPricingTable>
-    
-      <PricingPlan>
-        
-      
-        <PricingFeatures>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          </PricingFeatures>
-        <PricingPrice>Free</PricingPrice>
-        <Button>Sign up</Button>
-        </PricingPlan>
-      
-        <PricingPlanFeatured>
+        <PriceContainer>
        
-        <h2>Early Access</h2>
-        <PricingFeatures>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          </PricingFeatures>
-        <PricingPrice>Free</PricingPrice>
-        <Button>Sign up</Button>
+        <h2>Join the Community and Beta</h2>
+        <SubText>
+         No subscriptions, jut one-time access fees. No need to pay for additional software.
+        </SubText>
+          <PanelPricingTable>
+    
+            <PricingPlan>
+              <PreTitle>Demo</PreTitle>
+                <PricingPrice>Free</PricingPrice>
+                <PostTitle>Free forever</PostTitle>
+                <p> Get a free limited preview access.</p> 
+              
+                
+                <Button as="a" href="/thankspage">Get It!</Button>
+            </PricingPlan>
+      
+           <PricingPlanFeatured>
+           <PreTitle>Early-Bird(50 places)</PreTitle>
+             <PricingPrice>$29</PricingPrice>
+             <PostTitle>One time purchase</PostTitle>
+          <p> Get the free chapter plus claim a discount for the official full-acccess launch!</p>
+        
+          <Button as="a" id="preBuyButton" href="/thanksB">Sign up</Button>
         </PricingPlanFeatured>
         
        
         <PricingPlan>
-
-        <h2>Premium</h2>
-        <PricingFeatures>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          <PricingFeaturesItem>Custom domains</PricingFeaturesItem>
-          </PricingFeatures>
-        <PricingPrice>Free</PricingPrice>
-        <Button>Sign up</Button>
+        <PreTitle>Regular</PreTitle>
+        <PricingPrice>$49</PricingPrice>
+         <PostTitle>One time purchase</PostTitle>
+       
+        <p> Official Price when we launch</p>
+       
+        <Button>Comming Soon</Button>
         </PricingPlan>
    
     
@@ -60,8 +60,9 @@ const StyledSection = styled(Section)`
 export const PriceContainer=styled.div`
     margin: 0 auto;
     padding: 50px 0 0;
+    text-align: center;
     //max-width: 960px;
-    width:80%;
+    width:50%;
     `
 
   export const PanelPricingTable=styled.div`
@@ -69,83 +70,110 @@ export const PriceContainer=styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    text-transform: uppercase;
-  
+    justify-content:space-evenly;
+    background-color: ${props => props.theme.color.background.white};
+    padding: 1rem;
   @media (min-width: 900px) {
-    
       flex-direction: row;
     
   };
   
  `
-
-  
   
   export const PricingPlan=styled.div `
-    border-bottom: 1px solid #e1f1ff;
-    padding: 25px;
+    border-bottom:none ;
+    padding: 8px;
     background-color: ${props => props.theme.color.background.white};
-  
+    margin-bottom:32px;
   @media (min-width: 900px) {
-  
       border-bottom: none;
-      border-right: 1px solid #e1f1ff;
       flex-basis: 100%;
-      padding: 25px 50px;
+      padding: 25px 25px;
     }
   
 `
 export const PricingPlanFeatured=styled.div `
     border-bottom: 1px solid #e1f1ff;
-    padding: 25px;
-    z-index: 10;
-    font-size: 1.15em;
-
-    
+    padding: 16px;
+    border-left: 0.5px solid #d4af37;
+    border-right: 0.5px solid #d4af37;
     background-color: ${props => props.theme.color.background.white};
+    transform: scale(1.2);
   
   @media (min-width: 900px) {
   
       border-bottom: none;
-      border-right: 1px solid #e1f1ff;
+      border-right: 0.5px solid #d4af37;
       flex-basis: 100%;
       padding: 25px 50px;
     }
   
 `
   
-export const PricingFeatures=styled.ul`
-    color: #016FF9;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 50px 0 25px;
-  
-  `
-  export const PricingFeaturesItem=styled.li`
-    border-top: 1px solid #e1f1ff;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 15px 0;
-  
-  `
 
  export const PricingPrice=styled.span`
-  color: #016FF9;
+   color:${props => props.theme.color.primary};
   display: block;
   font-size: 32px;
   font-weight: 700;
 `
 
-export const Button=styled.button`
-  border: 1px solid #9dd1ff;
-  border-radius: 10px;
-  color: #348EFE;
-  display: inline-block;
-  margin: 25px 0;
-  padding: 15px 35px;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-`
+const Button = styled.button`
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center; 
+  margin-left: 8px;
+  text-decoration:none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  white-space: nowrap;
+  background: ${props => props.theme.color.secondary};
+  border-radius: 4px;
+  padding: 0px 40px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: 0px;
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(191,175,178,1);
+    transform: scale(1.05);
+  }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+  }`
 
+
+export const PreTitle=styled.span`
+font-size: 16px;
+font-weight: 300;
+letter-spacing: -0.56px;
+line-height: 28px;
+margin-bottom: 22px;
+color: ${props => props.theme.color.accent};
+
+`
+export const PostTitle=styled.span`
+  color: #696871;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.56px;
+  line-height: 28px;
+  margin-bottom: 22px;
+  `
 
   
+export const SubText=styled.p `
+margin-bottom:32px;
+font-size: 20px;
+font-weight: 300;
+
+`

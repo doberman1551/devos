@@ -35,6 +35,15 @@ module.exports = {
         "G-3Q2G49663Y"]
     }
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NS6DHDL",
+        includeInDevelopment: false,
+  
+        enableWebVitalsTracking: true,
+      },
+    },
 
 
 

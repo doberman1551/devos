@@ -27,7 +27,7 @@ export const Price = () => {
            <PreTitle>Early-Bird(50 places)</PreTitle>
              <PricingPrice>$29</PricingPrice>
              <PostTitle>One time purchase</PostTitle>
-          <p> Get the free chapter plus claim a discount for the official full-acccess launch!</p>
+          <p> Get the preview plus claim a discount for the official full-acccess launch!</p>
         
           <Button as="a" id="preBuyButton" href="/thanksB">Sign up</Button>
         </PricingPlanFeatured>

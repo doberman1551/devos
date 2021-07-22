@@ -27,7 +27,7 @@ export const Price = () => {
            <PreTitle>Early-Bird(50 places)</PreTitle>
              <PricingPrice>$29</PricingPrice>
              <PostTitle>One time purchase</PostTitle>
-          <p> Get the preview plus claim a discount for the official full-acccess launch!</p>
+          <p> Preview access plus discount for the official full-acccess launch!</p>
         
           <Button as="a" id="preBuyButton" href="/thanksB">Sign up</Button>
         </PricingPlanFeatured>
@@ -98,7 +98,7 @@ export const PricingPlanFeatured=styled.div `
     border-left: 0.5px solid #d4af37;
     border-right: 0.5px solid #d4af37;
     background-color: ${props => props.theme.color.background.white};
-    transform: scale(1.2);
+    transform: scale(1.18);
   
   @media (min-width: 900px) {
   

@@ -40,7 +40,7 @@ export const Price = () => {
        
         <p> Official Price when we launch</p>
        
-        <Button>Comming Soon</Button>
+        <Button> Soon!</Button>
         </PricingPlan>
    
     

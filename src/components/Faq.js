@@ -5,14 +5,16 @@ import {Section} from "./Global"
 
 export const Faq = () => {
     return (
-     
-       <SectionStyled>  
+      <Wrapper>
+      <Container>
+      <Flex>
+    
                
                 <FaqCard>
                  
-                    <FaqTitle> How does it work?</FaqTitle>
+                    <FaqTitle> When is the official launch?</FaqTitle>
                     <p>
-                      After purchase you will receive a link with access
+                      We hope to launch at end of summer 2021. You could still <a href="https://lancerlot.substack.com/">subscribe to the newsletter </a>to recieve content.
                     </p>
                 
                 </FaqCard>
@@ -22,20 +24,15 @@ export const Faq = () => {
              
                     <FaqTitle>How does it work?</FaqTitle>
                     <p>
-                      Yes. We update all of our themes regularly, plus are
-                      constantly adding new components, pages, and features to our
-                      themes. Purchase once and get lifetime updates.
-                    </p>
+                      Once you purchase Lancerlot, you will receive a link for Notion access. </p>
                
                 </FaqCard>
              
                 <FaqCard>
                 
-                    <FaqTitle>Does it work with WordPress?</FaqTitle>
+                    <FaqTitle>Do I need paid Notion subscription?</FaqTitle>
                     <p>
-                      Create custom landing pages with Omega that converts more
-                      visitors than any website. With lots of unique blocks, you can
-                      easily build a page without any design or custom coding.
+                      No! You could use a free Notion account to acess all of the dashboard and materials.
                     </p>
                   
                 </FaqCard>
@@ -43,37 +40,40 @@ export const Faq = () => {
              
                 <FaqCard>
                 
-                    <FaqTitle>Will you provide support?</FaqTitle>
+                    <FaqTitle>Free vs Paid?</FaqTitle>
                     <p>
-                      With lots of unique blocks, you can easily build a page
-                      without any design or custom coding. with Omega that converts
-                      more visitors than any website.
+                     The version contains "Places to find good projects" currently. The paid version would entail full access to all the dashboard materials plus discount codes.
                      </p>
                  
                 </FaqCard>
-                </SectionStyled> 
+                </Flex>
             
+                </Container>
+                </Wrapper>
+    
     )
     
     
 }
 
-const SectionStyled = styled(Section)`
+{/*const SectionStyled = styled(Section)`
   background-color: ${props => props.theme.color.background.light};
   display:grid;
+  
   grid-template-columns: 1fr 1fr;
   grid-gap:20px;
   align-items:center;
   margin:0 auto;
   `
-
+*/}
 const FaqCard = styled.div`
-  padding-left:2rem;
+  padding:2rem;
+  padding-left:2.5rem;
   box-sizing: border-box;
   min-width: 0;
   position: relative;
   &::before {
-    content: "\f061";
+    
    
     font-weight: 900;
     min-width: 30px;
@@ -99,3 +99,46 @@ const FaqTitle = styled.span`
   margin-bottom: 24px;
   line-height: 2rem;
 `;
+
+export const Container = styled.div`
+  max-width: 1200px;
+  background-color: ${props => props.theme.color.background.light};
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media (min-width: ${props => props.theme.screen.xs}) {
+    max-width: 540px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.sm}) {
+    max-width: 720px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.md}) {
+    max-width: 960px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.lg}) {
+    max-width: 1200px;
+  }
+
+  ${props =>
+    props.fluid &&
+    `
+    max-width: 1200px !important;
+  `};
+`
+const Flex = styled.div`
+  display: grid;
+  justify-content: space-space-around;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    grid-template-columns: 1fr;
+    grid-gap: 64px;
+  }
+`
+const Wrapper=styled.div`
+  background-color: ${props => props.theme.color.background.light};
+`

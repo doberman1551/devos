@@ -15,7 +15,7 @@ export const BioInfo = () => {
       <StyledSection>
         
         <BioWrapper>
-              Created by a fellow tech services provider Dobromir Kotsev <br></br>
+              Created with &#128151; by a fellow tech services provider Dobromir Kotsev 
               <SocialLinks>
               <span>
               <a href="https://www.linkedin.com/in/dobromirkotsev/">
@@ -44,6 +44,7 @@ const StyledSection = styled(Section)`
   margin-top:-40px;
 `
 const BioWrapper=styled.div`
+font-size:17px;
 `
 const SocialLinks=styled.div`
   display:flex;

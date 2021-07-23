@@ -84,7 +84,7 @@ export const PriceContainer=styled.div`
     border-bottom:none ;
     padding: 8px;
     background-color: ${props => props.theme.color.background.white};
-    margin-bottom:32px;
+    margin-bottom:40px;
   @media (min-width: 900px) {
       border-bottom: none;
       flex-basis: 100%;

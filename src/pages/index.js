@@ -9,6 +9,7 @@ import Cta1 from "../components/Cta1"
 import Features from "../components/Features"
 import { BioInfo } from "../components/BioInfo"
 import Price from "../components/Price"
+import { Faq } from "../components/Faq"
 
 
 
@@ -23,7 +24,7 @@ const IndexPage = () => (
     <Features/>
   
     <Price></Price>
-    
+    <Faq/>
     <BioInfo/>
   </Layout>
 )

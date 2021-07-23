@@ -103,7 +103,7 @@ const FaqTitle = styled.span`
 export const Container = styled.div`
   max-width: 1200px;
   background-color: ${props => props.theme.color.background.light};
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   padding: 0 16px;
 
@@ -136,9 +136,11 @@ const Flex = styled.div`
   grid-template-columns: 1fr 1fr;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
+    width:80%;
     grid-gap: 64px;
   }
 `
 const Wrapper=styled.div`
   background-color: ${props => props.theme.color.background.light};
+  text-align:center;
 `

@@ -11,9 +11,11 @@ export const Price = () => {
         <SubText>
          No subscriptions, jut one-time access fees. No need to pay for additional software.
         </SubText>
-          <PanelPricingTable>
+        <Flex>
+          <Card>
+      
+          <CardBody>
     
-            <PricingPlan>
               <PreTitle>Demo</PreTitle>
                 <PricingPrice>Free</PricingPrice>
                 <PostTitle>Free forever</PostTitle>
@@ -21,19 +23,23 @@ export const Price = () => {
               
                 
                 <Button as="a" href="/thankspage">Get It!</Button>
-            </PricingPlan>
+            </CardBody>
+            </Card>
       
-           <PricingPlanFeatured>
+         <CardFeatured>
+         <CardBody>
            <PreTitle>Early-Bird(50 places)</PreTitle>
              <PricingPrice>$29</PricingPrice>
              <PostTitle>One time purchase</PostTitle>
           <p> Preview access plus discount for the official full-acccess launch!</p>
+          </CardBody>
+             <ButtonBig as="a" id="preBuyButton" href="/thanksB">Sign up</ButtonBig>
         
-          <Button as="a" id="preBuyButton" href="/thanksB">Sign up</Button>
-        </PricingPlanFeatured>
+          </CardFeatured>
         
        
-        <PricingPlan>
+          <Card>
+          <CardBody>
         <PreTitle>Regular</PreTitle>
         <PricingPrice>$49</PricingPrice>
          <PostTitle>One time purchase</PostTitle>
@@ -41,12 +47,15 @@ export const Price = () => {
         <p> Official Price when we launch</p>
        
         <Button> Soon!</Button>
-        </PricingPlan>
+        </CardBody>
+       </Card>
+       </Flex>
    
     
-    </PanelPricingTable>
-  </PriceContainer>
-  </StyledSection>
+    
+      </PriceContainer>
+ 
+       </StyledSection>
   )    
 }
 export default Price
@@ -59,62 +68,25 @@ const StyledSection = styled(Section)`
 
 export const PriceContainer=styled.div`
     margin: 0 auto;
-    padding: 50px 0 0;
+    padding: 56px 0 16px 0;
     text-align: center;
     //max-width: 960px;
     width:50%;
     `
 
-  export const PanelPricingTable=styled.div`
-    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content:space-evenly;
-    background-color: ${props => props.theme.color.background.white};
-    padding: 1rem;
-  @media (min-width: 900px) {
-      flex-direction: row;
-    
-  };
   
- `
+ 
   
-  export const PricingPlan=styled.div `
-    border-bottom:none ;
-    padding: 8px;
-    background-color: ${props => props.theme.color.background.white};
-    margin-bottom:40px;
-  @media (min-width: 900px) {
-      border-bottom: none;
-      flex-basis: 100%;
-      padding: 25px 25px;
-    }
-  
-`
-export const PricingPlanFeatured=styled.div `
-    border-bottom: 1px solid #e1f1ff;
-    padding: 16px;
-    border-left: 0.5px solid #d4af37;
-    border-right: 0.5px solid #d4af37;
-    background-color: ${props => props.theme.color.background.white};
-    transform: scale(1.18);
-  
-  @media (min-width: 900px) {
-  
-      border-bottom: none;
-      border-right: 0.5px solid #d4af37;
-      flex-basis: 100%;
-      padding: 25px 50px;
-    }
-  
-`
+ 
+
+
   
 
  export const PricingPrice=styled.span`
    color:${props => props.theme.color.primary};
   display: block;
   font-size: 32px;
+  padding:8px;
   font-weight: 700;
 `
 
@@ -154,9 +126,10 @@ const Button = styled.button`
 export const PreTitle=styled.span`
 font-size: 16px;
 font-weight: 300;
-letter-spacing: -0.56px;
+
+padding:32px 16px 16px 16px;
 line-height: 28px;
-margin-bottom: 22px;
+margin:22px 0px 22px 0px;
 color: ${props => props.theme.color.accent};
 
 `
@@ -177,3 +150,97 @@ font-size: 20px;
 font-weight: 300;
 
 `
+
+const Flex = styled.div`
+  
+  display: flex;
+   justify-content: space-between;
+  
+  flex-wrap: wrap;
+  padding:0 16px;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+
+    justify-content:center;
+  }
+ // @media (max-width: ${props => props.theme.screen.md}) {
+  //  grid-template-columns: 2fr;
+   // grid-gap: 80px;
+ // }
+  
+  `
+
+export const Card = styled.div`
+  flex: 0 1 calc(34% - 1em);
+  line-height:24px; 
+  padding:16px;
+  padding: 0 0;
+  background-color:#ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    flex: 1 1 1;
+    min-width:310px;
+    padding-bottom:18px;
+   
+  }
+  
+
+`
+
+export const CardBody = styled.div`
+  padding-right: 32px;
+  padding-left: 32px;
+  
+  ;`
+
+export const CardFeatured = styled.div`
+flex: 0 1 calc(34% - 1em);
+padding-bottom:32px;
+line-height:24px; 
+padding: 0 0;
+background-color:#ffffff;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+border-radius: 5px;
+transform: scale(1.12);
+@media (max-width: ${props => props.theme.screen.sm}) {
+  flex: 1 1 1;
+  min-width:310px;
+  margin-bottom:24px;
+  margin-top:24px;
+  padding-bottom:18px;
+ 
+}`
+
+const ButtonBig = styled.button`
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center; 
+  margin-left: 8px;
+  text-decoration:none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  white-space: nowrap;
+  background: ${props => props.theme.color.secondary};
+  border-radius: 4px;
+  padding: 0px 40px;
+  margin-bottom:16px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: 0px;
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(191,175,178,1);
+    transform: scale(1.05);
+  }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+    margin-bottom:8px;
+  }`

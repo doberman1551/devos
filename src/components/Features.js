@@ -6,7 +6,7 @@ import { Section, Container } from "./Global"
 const Features = () => (
   <Section id="features">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
+      <Subtitle>What it is?</Subtitle>
       <SectionTitle>Get Actionable Information</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
@@ -18,7 +18,7 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Marketing and Leadgen</FeatureTitle>
           <FeatureText>
-          Ideas,places and growth-hacking examples for lead generation.
+          Ideas, places and growth-hacking examples for lead generation.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>

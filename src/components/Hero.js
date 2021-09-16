@@ -7,7 +7,7 @@ import {useState} from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 const Hero = () => {
   const handleScroll=()=> {
-    const scrollheight=document.body.offsetHeight/2+300;
+    const scrollheight=document.body.offsetHeight/2+350;
     console.log(scrollheight)
     window.scroll({
       top:scrollheight,

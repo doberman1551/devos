@@ -6,6 +6,14 @@ import { Link,useStaticQuery} from "gatsby"
 import {useState} from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 const Hero = () => {
+  const handleScroll=()=> {
+    const scrollheight=document.body.offsetHeight/2+300;
+    console.log(scrollheight)
+    window.scroll({
+      top:scrollheight,
+      left: 0, 
+      behavior: 'smooth',
+    })};
 
 
 const data= useStaticQuery(graphql`
@@ -35,7 +43,7 @@ console.log(data);
               <h2>
                 We created all-in-one dashboard with resources on sales, marketing and operations to help you grow.
               </h2>
-             <Button as="a" href="/thankspage">Get Early Access</Button>
+             <Button as="a" onClick={handleScroll}>Get Access Now</Button>
             </HeroTextGroup>
               <ImageWrapper>
                <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />

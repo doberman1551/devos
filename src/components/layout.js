@@ -10,13 +10,16 @@ import Header from "./Header"
 import { ThemeProvider } from "styled-components"
 import GlobalStyles from "./styles/GlobalStyles"
 import theme from "./styles/theme"
-
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
  
 
   return (
     <ThemeProvider theme={theme}>
+    <Helmet>
+    <script src="https://gumroad.com/js/gumroad.js"  type="text/javascript"/>
+    </Helmet>
       <Header/>
      <main> <GlobalStyles/>{children}</main>
       </ThemeProvider>

@@ -7,7 +7,7 @@ export const Price = () => {
         
         <PriceContainer>
        
-        <h2>Join the Community and Beta</h2>
+        <h2>Buy Now! Save now... </h2>
         <SubText>
          No subscriptions, jut one-time access fees. No need to pay for additional software.
         </SubText>
@@ -18,8 +18,8 @@ export const Price = () => {
     
               <PreTitle>Demo</PreTitle>
                 <PricingPrice>Free</PricingPrice>
-                <PostTitle>Free forever</PostTitle>
-                <p> Get a free limited preview access.</p> 
+                <PostTitle>Free Chapter</PostTitle>
+                <p> Get a free one chapter access</p> 
               
                 
                 <Button as="a" href="/thankspage">Get It!</Button>
@@ -31,9 +31,9 @@ export const Price = () => {
            <PreTitle>Early-Bird(50 places)</PreTitle>
              <PricingPrice>$29</PricingPrice>
              <PostTitle>One time purchase</PostTitle>
-          <p> Preview access plus discount for the official full-acccess launch!</p>
+          <p> Full access for a limited time</p>
           </CardBody>
-             <ButtonBig as="a" id="preBuyButton" href="/thanksB">Sign up</ButtonBig>
+             <ButtonBig as="a" id="preBuyButton" href="https://gumroad.com/l/JoUWs?wanted=true">Get it!</ButtonBig>
         
           </CardFeatured>
         
@@ -44,7 +44,7 @@ export const Price = () => {
         <PricingPrice>$49</PricingPrice>
          <PostTitle>One time purchase</PostTitle>
        
-        <p> Official Price when we launch</p>
+        <p> Official Price</p>
        
         <Button> Soon!</Button>
         </CardBody>

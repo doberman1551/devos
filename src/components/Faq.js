@@ -47,7 +47,8 @@ export const Faq = () => {
                  
                 </FaqCard>
                 </Flex>
-            
+              
+                
                 </Container>
                 </Wrapper>
     

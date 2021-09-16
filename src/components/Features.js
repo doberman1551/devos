@@ -6,36 +6,33 @@ import { Section, Container } from "./Global"
 const Features = () => (
   <Section id="features">
     <StyledContainer>
-      <Subtitle>What it is?</Subtitle>
-      <SectionTitle>Get Actionable Information</SectionTitle>
+      <Subtitle>Whats inside?</Subtitle>
+      <SectionTitle>All-in-one resource for your service business </SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Positioning</FeatureTitle>
+          <FeatureTitle>Guide</FeatureTitle>
           <FeatureText>
-            Places and advice on how to position yourself.
+            Covering Sales, Positioning, Marketing, Finance 
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Marketing and Leadgen</FeatureTitle>
+          <FeatureTitle>Curated Info</FeatureTitle>
           <FeatureText>
-          Ideas, places and growth-hacking examples for lead generation.
+         Information on different topics so you could do a deep-dive.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Sales</FeatureTitle>
+          <FeatureTitle>10+ templates</FeatureTitle>
           <FeatureText>
-            Proposals, Contracts and how to utilize partnerships.
+            Proposals, Positioning, Contracts, Finance Templates
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Growth</FeatureTitle>
+          <FeatureTitle>$60+ in promos</FeatureTitle>
           <FeatureText>
-          Delivery, hiring, organisation, PM tips and finance.       </FeatureText>
+          For your favourite tools:Invision, Freshbooks, Pluralsight...      </FeatureText>
         </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Promo Codes</FeatureTitle>
-          <FeatureText> Discounts for some of your favourite ecosystem tools.</FeatureText>
-        </FeatureItem>
+     
         <FeatureItem>
           <FeatureTitle>Community</FeatureTitle>
           <FeatureText>

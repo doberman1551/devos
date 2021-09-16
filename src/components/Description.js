@@ -54,7 +54,7 @@ const Description = () => {
            Suitable for:
             <ul>
               <li> Freelance Developers and Designers</li>
-              <li>Small Agencies(2-30 people)</li>
+              <li>Small Agencies(2-10 people)</li>
             </ul>
             </TextArea>
             </p>

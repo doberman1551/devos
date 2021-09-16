@@ -10,6 +10,7 @@ import Features from "../components/Features"
 import { BioInfo } from "../components/BioInfo"
 import Price from "../components/Price"
 import { Faq } from "../components/Faq"
+import { CustomerProfile } from "../components/CustomerProfile"
 
 
 
@@ -18,11 +19,12 @@ import { Faq } from "../components/Faq"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    
+   
     <Hero/>
     <Description/>
     <Features/>
-  
+    <CustomerProfile/>
+   
     <Price></Price>
     <Faq/>
     <BioInfo/>

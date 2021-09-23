@@ -22,7 +22,7 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>10+ templates</FeatureTitle>
+          <FeatureTitle>6+ unique templates</FeatureTitle>
           <FeatureText>
             Proposals, Positioning, Contracts, Finance Templates
           </FeatureText>

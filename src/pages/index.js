@@ -11,6 +11,7 @@ import { BioInfo } from "../components/BioInfo"
 import Price from "../components/Price"
 import { Faq } from "../components/Faq"
 import { CustomerProfile } from "../components/CustomerProfile"
+import { YoutubeVideo } from "../components/YoutubeVideo"
 
 
 
@@ -24,7 +25,7 @@ const IndexPage = () => (
     <Description/>
     <Features/>
     <CustomerProfile/>
-   
+   <YoutubeVideo/>
     <Price></Price>
     <Faq/>
     <BioInfo/>

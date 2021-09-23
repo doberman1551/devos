@@ -32,7 +32,11 @@ const Features = () => (
           <FeatureText>
           For your favourite tools:Invision, Freshbooks, Pluralsight...      </FeatureText>
         </FeatureItem>
-     
+        <FeatureItem>
+          <FeatureTitle>Updates</FeatureTitle>
+          <FeatureText>
+          Would be adding more information and upadets in time covering different topics.     </FeatureText>
+        </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Community</FeatureTitle>
           <FeatureText>

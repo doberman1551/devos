@@ -11,7 +11,7 @@ const Description = () => {
 
     const data= useStaticQuery(graphql`
     query ProductInisde {
-    file(relativePath: {eq: "productinside.png"}) {
+    file(relativePath: {eq: "ProductInside3.png"}) {
       childImageSharp {
         fluid {
           sizes

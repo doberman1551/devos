@@ -25,6 +25,7 @@ return(
 <LogoContainer>
 <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
 </LogoContainer>
+Blog
 </Nav>
 
 )

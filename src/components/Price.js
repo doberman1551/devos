@@ -28,10 +28,10 @@ export const Price = () => {
       
          <CardFeatured>
          <CardBody>
-           <PreTitle>Early-Bird(50 places)</PreTitle>
-             <PricingPrice>$29</PricingPrice>
+         <PreTitle>Regular</PreTitle>
+        <PricingPrice>$49</PricingPrice>
              <PostTitle>One time purchase</PostTitle>
-          <p> Full access for a limited time</p>
+          <p> Full access </p>
           </CardBody>
              <ButtonBig as="a" id="preBuyButton" href="https://gumroad.com/l/JoUWs?wanted=true">Get it!</ButtonBig>
         
@@ -40,13 +40,13 @@ export const Price = () => {
        
           <Card>
           <CardBody>
-        <PreTitle>Regular</PreTitle>
-        <PricingPrice>$49</PricingPrice>
+        <PreTitle>Early-Bird</PreTitle>
+        <PricingPrice>$29</PricingPrice>
          <PostTitle>One time purchase</PostTitle>
        
-        <p> Official Price</p>
-       
-        <Button> Soon!</Button>
+        <p> Special Price</p>
+       <br/>
+        SOLD OUT!
         </CardBody>
        </Card>
        </Flex>

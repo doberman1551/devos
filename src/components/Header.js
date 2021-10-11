@@ -25,7 +25,7 @@ return(
 <LogoContainer>
 <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
 </LogoContainer>
-Blog
+<Button as="a" href="https://lancerlot.substack.com/">Blog</Button>
 </Nav>
 
 )
@@ -39,6 +39,9 @@ export default Header
 const Nav=styled.nav`
 background-color:${props => props.theme.color.background.light};
 height:80px;
+display:flex;
+justify-content:space-around;
+
 //position:relative;
 ;
 `
@@ -58,3 +61,35 @@ margin-left:60px;
     flex: 1;
 }
 `
+const Button = styled.button`
+color: #021d3a;
+Font-weight:800;
+  letter-spacing: 1px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center; 
+  margin-left: 8px;
+  text-decoration:none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  white-space: nowrap;
+ // background: ${props => props.theme.color.secondary};
+  border-radius: 4px;
+  padding: 0px 40px;
+  margin-bottom:16px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: 0px;
+  &:hover {
+    
+    transform: scale(1.1);
+  }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+    margin-bottom:8px;
+  }`
